@@ -1,0 +1,384 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 1.4em; 
+    /* Fondo general con un degradado difuminado muy suave */
+    background: linear-gradient(135deg, #e0f2fe 0%, #d1fae5 100%);
+    color: #064e3b; /* Texto en verde oscuro para mejor lectura */
+}
+
+.contenedor {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*------------------------------------
+ENCABEZADO
+-------------------------------------*/ 
+.encabezado { 
+    background: #064e3b; /* Verde bosque profundo */
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    top: 15px; 
+}
+
+.encabezado nav { 
+    float: right; 
+}
+
+.encabezado nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.encabezado nav ul li { 
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.encabezado nav ul li a { 
+    display: block;
+    color: #fff;
+    padding: 28px;
+    border-left: 1px solid #10b981; /* Borde sutil verde brillante */
+    text-decoration: none;
+}
+
+/* Cambio de color al pasar el cursor */
+.encabezado nav ul li a:hover { 
+    background: #0ea5e9; /* Cambia a azul océano */
+}
+
+/*------------------------------------
+PRESENTACION (Difuminado Azul y Verde)
+-------------------------------------*/ 
+.presentacion {
+    /* Difuminado radial que mezcla azul cielo con verde brillante */
+    background: radial-gradient(400px at 60% 10%, #0ea5e9, #10b981);
+    overflow: hidden;
+    border-bottom: 3px solid #064e3b; 
+}  
+
+.introduccion-presentacion {
+    float: left;
+}
+
+.introduccion-presentacion h1 {
+    color: #fff;
+    font-size: 2.625em;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra suavizada */
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    line-height: 0.7em; 
+} 
+
+.introduccion-presentacion h1 span {
+    color: #fef08a; /* Amarillo suave ecológico para resaltar "CDMX" */
+    font-size: 0.38em; 
+}
+
+/*------------ aprender mas ------------*/
+a.aprender-mas {
+    font-size: 2.1875em;
+    border: 1px solid #0369a1; /* Borde azul */
+    padding: 30px 50px;
+    display: block;
+    text-align: center;
+    margin: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 #000;
+    border-radius: 10px;
+    /* Difuminado interno en el botón */
+    background: linear-gradient(to top, #0ea5e9, #0369a1);
+    box-shadow: 0 8px 0 0 #025a87,
+                0 0 25px 5px rgba(255, 255, 255, 0.6);
+} 
+
+a.aprender-mas:hover {
+    box-shadow: 0 0 25px 5px #000;
+}
+
+.presentacion img {
+    float: right;
+    position: relative;
+    top: 30px;
+}
+
+.bloque-contenido {
+    overflow: hidden; 
+    margin-top: 25px; 
+}
+/*------------------------------------
+ACCESO RAPIDO 
+-------------------------------------*/ 
+.acceso-rapido {
+    background: #10b981; /* Verde naturaleza vibrante */
+    border-bottom: 3px solid #fff;
+    padding-bottom: 30px;
+}
+
+.acceso-rapido h2 {
+    color: #fff;
+    font-size: 1.87em;
+    text-shadow: 1px 1px 0 #000;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 16px;
+    margin-bottom: 25px;
+}
+
+/* Fuerza a la lista completa a ponerse en horizontal y centrarse */
+.acceso-rapido ul {
+    display: flex;            /* Alinea los elementos en fila */
+    justify-content: center;  /* Centra la fila en la pantalla */
+    gap: 50px;                /* Espacio de separación entre cada opción */
+    list-style: none;        /* ELIMINA LOS PUNTOS NEGROS */
+    padding: 0;
+    margin: 0;
+}
+
+/* Ordena el contenido de cada ícono (imagen arriba, texto abajo) */
+.acceso-rapido li {
+    display: flex;
+    flex-direction: column;   /* Imagen arriba, texto abajo */
+    align-items: center;      /* Centra el texto con su imagen */
+    text-align: center;
+}
+
+.acceso-rapido li img {
+    display: block;
+    margin-bottom: 10px;      /* Espacio entre el ícono y el texto */
+}
+
+.acceso-rapido li a {
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    font-size: 1.1875em;
+    text-decoration: none;
+}
+
+.acceso-rapido li a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------------------
+BLOQUE CONTENIDO
+-------------------------------------*/ 
+.bloque-contenido {
+    overflow: hidden; 
+    margin-top: 25px; 
+}
+
+.bloque-contenido .contenedor {  
+    display: table;  
+}
+
+.articulos { 
+    background: #ffffff; /* Cambiado de beige a blanco limpio para diseño moderno */
+    width: 65%; 
+    display: table-cell;  
+    padding-right: 30px; 
+}
+
+.articulos article {  
+    margin-bottom: 10px;
+}
+
+.articulos h2 {  
+    color: #064e3b; /* Verde oscuro */
+    font-size: 1.625em;
+    border-bottom: 3px solid #10b981; /* Línea verde brillante */
+    padding-bottom: 25px;
+}
+
+.articulos img {  
+    float: left;
+    margin-right: 10px;
+    position: relative; 
+    top: 5px;           
+}
+
+.articulos article h1 {  
+    font-size: 1.25em;  
+    margin: 8px 0 8px 0;  
+}
+
+.articulos article h1 a {  
+    color: #0ea5e9; /* Títulos de noticias en azul océano */
+    text-decoration: none;
+}
+
+.articulos article h1 a:hover {  
+    text-decoration: underline;
+    color: #0369a1;
+}
+
+.articulos article p {  
+    margin: 0;
+    text-align: justify;
+    font-size: 0.875em; 
+    color: #374151; /* Gris oscuro para lectura cómoda de párrafos */
+}
+
+/*------------------------------------
+COLUMNA COMPLEMENTARIA
+-------------------------------------*/ 
+.complementario {    
+    background: #0ea5e9; /* Azul océano */
+    width: 35%; 
+    display: table-cell; 
+    padding: 0 20px 20px; 
+}
+
+.complementario h2 {   
+    font-size: 1.625em;  
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+}
+
+.complementario ul {   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.complementario ul li { 
+    background: url("imagen/icon.png") no-repeat left center;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+
+.complementario ul li a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+.complementario ul li a:hover { 
+    color: #fef08a; /* Cambio de rojo a amarillo suave al pasar el cursor */
+    text-decoration: underline; 
+}
+
+/*------------------------------------
+SUSCRIPCION
+-------------------------------------*/ 
+.suscripcion {  
+    overflow: hidden;
+    background: #f0fdf4; /* Fondo verde menta muy suave */
+    margin-top: 20px;  
+    border-top: 2px solid #10b981;
+    border-bottom: 2px solid #10b981;
+}
+
+.suscripcion h2 { 
+    float: left;
+    font-size: 1.625em; 
+    color: #064e3b;
+    font-weight: normal;
+}
+
+.suscripcion form {  
+    float: right;
+    position: relative; 
+    top: 20px;   
+}
+
+.suscripcion form input {   
+    border: 1px solid #cccccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.suscripcion form input[type="submit"] { 
+    border: 1px solid #0369a1;
+    padding: 10px;
+    /* Difuminado para el botón enviar */
+    background: linear-gradient(to top, #10b981, #0ea5e9);
+    color: #fff;
+    text-shadow: 1px 1px 0 #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.suscripcion form input[type="submit"]:hover { 
+    background: #064e3b; /* Se oscurece al pasar el cursor */
+}
+
+/*------------------------------------
+PIE DE PAGINA
+-------------------------------------*/ 
+.piedepagina {   
+    background: #0f172a; /* Azul pizarra oscuro (casi negro) */
+    padding: 20px 0; 
+}
+
+.piedepagina .contenedor {   
+    display: table;
+}
+
+.piedepagina small {  
+    display: table-cell;
+    color: #94a3b8;  
+}
+
+.piedepagina nav { 
+    display: table-cell;
+    text-align: right; 
+}
+
+.piedepagina nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.piedepagina nav ul li { 
+    display: inline-block;
+    padding-left: 10px;  
+}
+
+.piedepagina nav ul li a { 
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.piedepagina nav ul li a:hover { 
+    color: #38bdf8; /* Brillo azul claro al pasar el cursor */
+    text-decoration: underline;
+}
+
+/*------------------------------------
+REDES SOCIALES
+-------------------------------------*/ 
+.social {
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+
+.social a {
+    display: block;
+    margin-bottom: 4px;
+    opacity: 0.8;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+.social img {
+    border-radius: 50%;
+    display: block;
+}
